@@ -192,7 +192,7 @@ $(document).ready(function() {
             //creates a new friend object with the values submitted
             var newFriend = {
                 name: $('#name').val().trim(),
-                profilePic: $('#photo').val().trim(),
+                profilePic: $('#picture').val().trim(),
                 scores: [
                     $('#q1').val(),
                     $('#q2').val(),
@@ -213,7 +213,7 @@ $(document).ready(function() {
     });
 
      // Show the modal with the best match
-     $('.modal').show();
+     $('.modal').modal();
 
             //clear form 
             $('#name').val("");
