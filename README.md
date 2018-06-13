@@ -13,5 +13,5 @@ TECHNOLOGIES USED:
 - path NPM Package
 - body-parser NPM Package
 
-LINK TO HEROKU:
+LINK TO HEROKU: https://whispering-taiga-92606.herokuapp.com/
 
