@@ -9,7 +9,7 @@ var friendList = require("../data/friends.js");
 module.exports = function (app) {
 
     // API GET Requests
-    app.get("/api/data/friends", function (req, res) {
+    app.get("/api/friends", function (req, res) {
         res.json(friendList);
     });
 
@@ -32,7 +32,7 @@ module.exports = function (app) {
     // for loop for user's score input
 
     for (var j=0; j < newFriendScores.length; j++){
-        difference = difference + (Math.abs(parseInt(friendList[i].scores[j]) - parseInt(newFriendScores[j])));
+        difference += difference + (Math.abs(parseInt(friendList[i].scores[j]) - parseInt(newFriendScores[j])));
     }
     
     // push difference value to the scoresArray
