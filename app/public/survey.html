@@ -207,13 +207,13 @@ $(document).ready(function() {
                 ]
             };
 
-      $.post("/api/data/friend.js", newFriend, function(data) {
+      $.post("/api/data/friends", newFriend, function(data) {
         $("#userMatch").text(data.name);
         $("#matchPic").attr("src", data.profilePic);    
     });
 
      // Show the modal with the best match
-     $('.modal').modal();
+     $('#modal').modal("toggle");
 
             //clear form 
             $('#name').val("");
